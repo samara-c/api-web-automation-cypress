@@ -1,14 +1,14 @@
 class TestData {
   static generateUser() {
-    const timestamp = Date.now()
+  const timestamp = Date.now()
 
-
-    return {
-      name: `QA User ${timestamp}`,
-      email: `qa.user.${timestamp}@test.com`,
-      password: 'QaSamara123456!'
-    }
+  return {
+    name: `QA User ${timestamp}`,
+    email: `qa.user.${timestamp}@test.com`,
+    password: 'Qa123456!',
+    administrador: 'false'
   }
+}
 
   static generateInvalidCredentials() {
     return {
