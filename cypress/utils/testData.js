@@ -2,10 +2,11 @@ class TestData {
   static generateUser() {
     const timestamp = Date.now()
 
+  
     return {
       name: `QA User ${timestamp}`,
       email: `qa.user.${timestamp}@test.com`,
-      password: 'Qa123456!'
+      password: 'QaSamara123456!'
     }
   }
 
@@ -13,6 +14,17 @@ class TestData {
     return {
       email: `invalid.${Date.now()}@test.com`,
       password: 'InvalidSamaraPassword123!'
+    }
+  }
+
+  static generateAdmin() {
+  const timestamp = Date.now()
+
+  return {
+    name: `QA Admin ${timestamp}`,
+    email: `qa.admin.${timestamp}@test.com`,
+    password: 'QaSamara123456!',
+    administrador: 'true'
     }
   }
 }

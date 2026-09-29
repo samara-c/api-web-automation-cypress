@@ -12,6 +12,10 @@ module.exports = defineConfig({
     saveAllAttempts: false
   },
 
+  env: {
+    apiUrl: 'https://serverest.dev'
+  },
+
   e2e: {
     baseUrl: 'https://front.serverest.dev',
 
