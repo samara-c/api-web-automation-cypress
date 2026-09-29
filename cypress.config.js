@@ -12,7 +12,7 @@ module.exports = defineConfig({
     saveAllAttempts: false
   },
 
-  env: {
+  expose: {
     apiUrl: 'https://serverest.dev'
   },
 
