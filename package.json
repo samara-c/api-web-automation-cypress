@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "cy:open": "cypress open",
-  "cy:run": "cypress run",
-  "test": "cypress run"
-},
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samara-c/api-web-automation-cypress.git"
