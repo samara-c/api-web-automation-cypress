@@ -38,4 +38,23 @@ describe('Users API', () => {
     })
   })
 
+  it('should retrieve a created user by id', () => {
+  const user = TestData.generateUser()
+
+  UsersApi.createUser(user).then((createResponse) => {
+    expect(createResponse.status).to.eq(201)
+
+    const userId = createResponse.body._id
+
+    UsersApi.getUserById(userId).then((response) => {
+      expect(response.status).to.eq(200)
+
+      expect(response.body.nome).to.eq(user.name)
+      expect(response.body.email).to.eq(user.email)
+      expect(response.body.administrador).to.eq(user.administrador)
+      expect(response.body._id).to.eq(userId)
+    })
+  })
+})
+
 })
