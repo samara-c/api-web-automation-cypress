@@ -1,8 +1,9 @@
 class UsersApi {
-  createUser(user) {
+  createUser(user, failOnStatusCode = true) {
     return cy.request({
       method: 'POST',
       url: `${Cypress.expose('apiUrl')}/usuarios`,
+      failOnStatusCode,
       body: {
         nome: user.name,
         email: user.email,
