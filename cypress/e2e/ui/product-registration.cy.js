@@ -41,11 +41,7 @@ describe('Product Registration', () => {
 
             ProductsListPage.productRow(product.name)
                 .should('be.visible')
-
-            ProductsListPage.productRow(product.name)
-                .should('be.visible')
                 .within(() => {
-                    cy.contains(product.name).should('be.visible')
                     cy.contains(String(product.price)).should('be.visible')
                     cy.contains(product.description).should('be.visible')
                     cy.contains(String(product.quantity)).should('be.visible')
