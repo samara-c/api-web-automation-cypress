@@ -143,6 +143,16 @@ reports/
 
 The `reports` folder is ignored by Git because it is generated during test execution.
 
+## Security Considerations
+
+No real credentials, tokens or API keys are stored in the repository.
+
+Sensitive configuration files such as `.env` and `cypress.env.json` are ignored by Git.
+
+The credentials used in the automated scenarios are generated exclusively for testing purposes and do not represent real user data.
+
+Public application URLs are kept in the Cypress configuration, while sensitive values should be provided through environment variables when required.
+
 ## Use of AI
 
 AI was used as a support tool during the development of this project.
